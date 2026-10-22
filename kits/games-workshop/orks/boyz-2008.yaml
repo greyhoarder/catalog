@@ -1,5 +1,5 @@
 name: Boyz
-faction: warhammer-40000/orks
+factions: [warhammer-40000/orks]
 releases:
   - sku: "50-10"
     barcode: "5011921096138"
@@ -10,6 +10,12 @@ draft: true
 variants:
   - name: Boyz
     slots:
-      - count: 11
-        buildsAs: [Ork Boy]
-        parts: [Slugga, Choppa, Shoota, Stikkbomb]
+      - count: 8
+        buildsAs: [Boy]
+        parts: [Slugga, Choppa, Shoota, Stikkbomb, Tankbusta Bombz]
+      - count: 2
+        buildsAs: [Boy]
+        parts: [Slugga, Choppa, Shoota, Stikkbomb, Kustom Shoota, Rokkit Launcha, Tankbusta Bombz]
+      - count: 1
+        buildsAs: [Nob, Boy]
+        parts: [Slugga, Choppa, Kustom Choppa, Big Choppa, Power Klaw, Killsaw, Power Stabba, Tankbusta Bombz]

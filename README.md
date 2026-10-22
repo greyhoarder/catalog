@@ -19,7 +19,9 @@ no rules.
 ## Layout
 
 ```text
-kits/<manufacturer>/<folder>/<kit>.yaml  ← one file per kit
+kits/<manufacturer>/<folder>/<kit>.yaml   ← one file per kit
+factions/<system>.yaml                    ← the armies of one game system
+ranges/<manufacturer>/<faction>.yaml      ← working lists: what exists for an army
 ```
 
 - A kit's **id** is its path below `kits/` without the extension, e.g.
@@ -27,56 +29,183 @@ kits/<manufacturer>/<folder>/<kit>.yaml  ← one file per kit
   kit file is never renamed, moved or deleted.
 - The **manufacturer** is the first folder, e.g. `games-workshop`.
 - The folders below the manufacturer only keep things tidy (a range, a
-  faction, a game); they carry no meaning.
+  faction, a game); they carry no meaning. Boxes with several armies go
+  into `sets/`.
+- Ids and file names are lower case with hyphens.
 
 ## A kit file
 
 ```yaml
-# kits/games-workshop/orks/lootas-burna-boyz.yaml
-# id: games-workshop/orks/lootas-burna-boyz
-name: Lootas / Burna Boyz
-faction: warhammer-40000/orks
+# kits/games-workshop/orks/boyz-2026.yaml
+# id: games-workshop/orks/boyz-2026
+name: Boyz
+factions: [warhammer-40000/orks]
+releases:
+  - year: 2026
+    sku: "50-80"
+    barcode: "5011921267064"
+minis: 11
+draft: true
+supersedes: games-workshop/orks/boyz-2021
 variants:
-  - name: Lootas
+  - name: Boyz
     slots:
+      - count: 9
+        buildsAs: [Boy]
+        parts: [Slugga, Choppa, Shoota, Stikkbomb, Big Shoota, Rokkit Launcha, Burna]
       - count: 1
-        buildsAs: [Mek]
-        parts: [Kustom Mega-blasta]
-      - count: 4
-        buildsAs: [Loota]
-        parts: [Deffgun]
-  - name: Burna Boyz
-    slots:
+        buildsAs: [Nob]
+        parts: [Big Choppa, Kustom Choppa, Power Klaw, Kombi-skorcha, Boss Pole]
       - count: 1
-        buildsAs: [Mek]
-        parts: [Kustom Mega-blasta]
-      - count: 4
-        buildsAs: [Burna Boy]
-        parts: [Burna]
+        buildsAs: [Ammo Runt]
 ```
 
 | Field | Required | Meaning |
 |-------|----------|---------|
 | `name` | yes | Name of the kit as printed on the box |
-| `faction` | no | `<system>/<faction>`, e.g. `warhammer-40000/orks`; left out for kits without a game system (terrain, generic minis) |
-| `sku` | no | The manufacturer's product code, e.g. `"50-80"` (quoted) |
-| `variants` | yes | The either-or outcomes of the kit; most kits have exactly one |
+| `factions` | no | The armies the manufacturer sells the kit for, see [Factions](#factions). The first entry is the army it is mainly sold for. Left out only for kits without a game system (generic minis, bits) |
+| `releases` | no | One entry per packaging of the same sprues, see [Editions](#editions) |
+| `releases[].year` | no | The year this packaging first went on sale on its own |
+| `releases[].sku` | no | The manufacturer's product code, e.g. `"50-80"` (quoted) |
+| `releases[].barcode` | no | EAN/GTIN from the box, digits only (quoted) |
+| `minis` | yes | Total minis the box yields; for either-or kits the count of the first variant |
+| `draft` | no | `true` while the entry is not checked against a physical box |
+| `supersedes` | no | Id of the previous edition with other sprues |
+| `contains` | no | Bundles only: kits whose sprues are in the box unchanged, see [Bundles](#bundles) |
+| `contains[].kit` | yes | Id of the contained kit |
+| `contains[].count` | yes | How many of that kit |
+| `variants` | no | The either-or outcomes of the minis not covered by `contains`; most kits have exactly one |
 | `variants[].name` | yes | Name of the outcome, e.g. `Lootas` |
 | `variants[].slots` | yes | Groups of minis in this outcome |
 | `slots[].count` | yes | How many minis the slot yields |
-| `slots[].buildsAs` | yes | What these minis can be built as; the first entry is the default name |
+| `slots[].buildsAs` | yes | What these minis can be built as, by the model's short name within the kit (`Nob`, not `Beast Snagga Nob`); the full name is put together from kit and model. The first entry is the most common build |
 | `slots[].parts` | no | Notable parts that come with these minis (weapons, heads, backpacks) |
-| `slots[].faction` | no | Only when it differs from the kit's, e.g. in a starter set with two armies |
+| `slots[].factions` | no | Only when it differs from the kit's, e.g. in a starter set with two armies |
+
+- **Either-or kits** have one variant per outcome; minis that are the same
+  in every outcome appear in each variant.
+- **Optional leaders** are an alternative in `buildsAs`; they get a slot of
+  their own only when the box has a dedicated body for them.
 
 Everything is a suggestion. Greyhoarder never checks a user's minis
 against the catalog: if someone builds two Nobz from one box, that is
 their hoard.
 
+## Editions
+
+A kit file stands for one set of sprues.
+
+- **Same sprues in new packaging** (new box, product code or barcode):
+  another entry under `releases` of the same file.
+- **New sculpts:** a new file, with the year in its name
+  (`boyz-2026.yaml`), that names the previous edition in `supersedes`.
+
+If it is unclear whether two editions share their sprues, they are treated
+as different kits.
+
+## Bundles
+
+Army sets, combat patrols and starter sets are kits too.
+
+- Sprues identical to an existing kit go into `contains`. The same name is
+  not enough: starter-set Boyz with their own sprues are not the Boyz kit.
+- Everything else in the box is described in its own `variants`.
+- `minis` counts the whole box: the minis of the contained kits times
+  their count, plus those in its own slots.
+
+## Factions
+
+Each game system has one file below `factions/`; its file name is the
+**system id**.
+
+```yaml
+# factions/warhammer-40000.yaml
+name: Warhammer 40,000
+groups:
+  imperium: Imperium
+  xenos: Xenos
+factions:
+  space-marines:
+    name: Space Marines
+    group: imperium
+  blood-angels:
+    name: Blood Angels
+    partOf: space-marines
+  orks:
+    name: Orks
+    group: xenos
+```
+
+| Field | Required | Meaning |
+|-------|----------|---------|
+| `name` | yes | Name of the game system |
+| `groups` | no | Blocks that armies are sorted into for display, as `<id>: <name>` |
+| `factions` | yes | The armies of the system, as `<faction id>: {...}` |
+| `factions.*.name` | yes | Name of the army |
+| `factions.*.group` | no | Id of its group; left out with `partOf`, the group then comes from that army |
+| `factions.*.partOf` | no | Id of an army whose kits all apply to this one as well |
+
+- An entry in a kit's `factions` is either `<system>/<faction>`, e.g.
+  `warhammer-40000/orks`, or a whole system, e.g. `warhammer-40000` for
+  terrain that every army uses.
+- Every faction is an army of its own. `group` only sorts armies; it shares
+  no kits. Death Guard are in the group Chaos without being part of Chaos
+  Space Marines.
+- `partOf` is for armies the manufacturer sells as part of another one,
+  such as chapters of the Space Marines. A generic Space Marines kit lists
+  only `warhammer-40000/space-marines`; the chapters get it through
+  `partOf`. A chapter is listed in a kit only for boxes sold for it.
+- `factions` says what the manufacturer sells a kit for, not what the
+  rules of a game allow.
+
+## Ranges
+
+A range file lists what a manufacturer sells or sold for one army, so that
+contributors can see what is still missing. Greyhoarder does not import
+ranges.
+
+```yaml
+# ranges/games-workshop/orks.yaml
+manufacturer: games-workshop
+faction: warhammer-40000/orks
+checked: 2026-10-22
+kits:
+  - name: Boyz
+    kind: kit
+    first: 2026
+    catalog: [games-workshop/orks/boyz-2026]
+    state: drafted
+```
+
+| Field | Required | Meaning |
+|-------|----------|---------|
+| `manufacturer` | yes | Manufacturer folder below `kits/` |
+| `faction` | yes | The army, `<system>/<faction>` |
+| `checked` | yes | Date of the last research, `YYYY-MM-DD` |
+| `kits[].name` | yes | Name of the kit |
+| `kits[].kind` | yes | `kit`, `bundle` or `starter-set` |
+| `kits[].first` | no | First year on sale |
+| `kits[].last` | no | Last year on sale; left out while still on sale |
+| `kits[].catalog` | yes | Ids of the matching kit files; empty until they are planned |
+| `kits[].state` | yes | `open`, `drafted` or `verified` |
+
+## Checks
+
+CI will check, once it exists:
+
+- every file matches the format above;
+- every entry in `factions`, `partOf` and `group` exists in `factions/`;
+- no kit lists an army twice, also not through `partOf`
+  (`[space-marines, blood-angels]` is an error);
+- every id in `supersedes`, `contains` and `catalog` exists;
+- no released kit file was renamed, moved or deleted.
+
 ## Releases
 
-Each release bundles all kits into one JSON file with a format version.
-Greyhoarder instances check for new releases and import them; a release
-only adds new versions of changed kits and never changes a user's hoard.
+Each release bundles all kits and factions into one JSON file with a
+format version. Greyhoarder instances check for new releases and import
+them; a release only adds new versions of changed kits and never changes a
+user's hoard.
 
 ## Kits created in Greyhoarder
 

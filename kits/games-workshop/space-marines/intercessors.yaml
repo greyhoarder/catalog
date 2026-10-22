@@ -1,5 +1,5 @@
 name: Intercessors
-faction: warhammer-40000/space-marines
+factions: [warhammer-40000/space-marines]
 variants:
   - name: Intercessors
     slots:

@@ -1,0 +1,12 @@
+name: Warhammer 40,000
+groups:
+  imperium: Imperium
+  chaos: Chaos
+  xenos: Xenos
+factions:
+  orks:
+    name: Orks
+    group: xenos
+  space-marines:
+    name: Space Marines
+    group: imperium
