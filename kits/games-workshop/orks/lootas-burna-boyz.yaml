@@ -1,0 +1,19 @@
+name: Lootas / Burna Boyz
+faction: warhammer-40000/orks
+variants:
+  - name: Lootas
+    slots:
+      - count: 1
+        buildsAs: [Mek]
+        parts: [Kustom Mega-blasta]
+      - count: 4
+        buildsAs: [Loota]
+        parts: [Deffgun]
+  - name: Burna Boyz
+    slots:
+      - count: 1
+        buildsAs: [Mek]
+        parts: [Kustom Mega-blasta]
+      - count: 4
+        buildsAs: [Burna Boy]
+        parts: [Burna]

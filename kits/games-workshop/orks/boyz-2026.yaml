@@ -1,0 +1,12 @@
+name: Boyz
+faction: warhammer-40000/orks
+sku: "50-80"
+variants:
+  - name: Boyz
+    slots:
+      - count: 9
+        buildsAs: [Boy]
+        parts: [Slugga, Choppa, Shoota, Big Shoota, Rokkit Launcha, Burna]
+      - count: 1
+        buildsAs: [Boss Nob, Boy]
+        parts: [Big Choppa, Kombi-skorcha, Kustom Choppa, Power Klaw]

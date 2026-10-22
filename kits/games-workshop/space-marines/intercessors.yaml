@@ -1,0 +1,8 @@
+name: Intercessors
+faction: warhammer-40000/space-marines
+variants:
+  - name: Intercessors
+    slots:
+      - count: 10
+        buildsAs: [Intercessor, Intercessor Sergeant]
+        parts: [Bolt Rifle, Auto Bolt Rifle, Stalker Bolt Rifle]
