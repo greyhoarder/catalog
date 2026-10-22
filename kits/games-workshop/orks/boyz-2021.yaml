@@ -1,0 +1,23 @@
+name: Boyz
+faction: warhammer-40000/orks
+releases:
+  - sku: "50-57"
+    barcode: "5011921163441"
+minis: 10
+draft: true
+supersedes: games-workshop/orks/boyz-2008
+variants:
+  - name: Boyz
+    slots:
+      - count: 5
+        buildsAs: [Ork Boy]
+        parts: [Slugga, Choppa]
+      - count: 3
+        buildsAs: [Ork Boy]
+        parts: [Shoota]
+      - count: 1
+        buildsAs: [Ork Boy]
+        parts: [Big Shoota, Rokkit Launcha]
+      - count: 1
+        buildsAs: [Boss Nob]
+        parts: [Power Klaw, Big Choppa]

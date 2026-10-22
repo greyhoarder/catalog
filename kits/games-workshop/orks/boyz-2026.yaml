@@ -1,12 +1,20 @@
 name: Boyz
 faction: warhammer-40000/orks
-sku: "50-80"
+releases:
+  - year: 2026
+    sku: "50-80"
+    barcode: "5011921267064"
+minis: 11
+draft: true
+supersedes: games-workshop/orks/boyz-2021
 variants:
   - name: Boyz
     slots:
       - count: 9
-        buildsAs: [Boy]
-        parts: [Slugga, Choppa, Shoota, Big Shoota, Rokkit Launcha, Burna]
+        buildsAs: [Ork Boy]
+        parts: [Slugga, Choppa, Shoota, Stikkbomb, Big Shoota, Rokkit Launcha, Burna]
       - count: 1
-        buildsAs: [Boss Nob, Boy]
-        parts: [Big Choppa, Kombi-skorcha, Kustom Choppa, Power Klaw]
+        buildsAs: [Boss Nob]
+        parts: [Big Choppa, Kustom Choppa, Power Klaw, Kombi-skorcha, Boss Pole]
+      - count: 1
+        buildsAs: [Ammo Runt]
