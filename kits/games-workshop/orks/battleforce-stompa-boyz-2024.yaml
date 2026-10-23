@@ -1,0 +1,22 @@
+name: "Battleforce: Stompa Boyz"
+factions: [warhammer-40000/orks]
+releases:
+  - year: 2024
+    sku: "50-67"
+minis: 23
+draft: true
+contains:
+  - kit: games-workshop/orks/stompa-2009
+    count: 1
+  - kit: games-workshop/orks/trukk-2008
+    count: 1
+  - kit: games-workshop/orks/lootas-2008
+    count: 2
+  - kit: games-workshop/orks/boyz-2021
+    count: 1
+variants:
+  - name: Stompa Boyz
+    slots:
+      - count: 1
+        buildsAs: [Big Mek]
+        parts: [Kustom Mega-blasta, Traktor Blasta, Power Klaw, Drilla]

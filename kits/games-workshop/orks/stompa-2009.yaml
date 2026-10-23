@@ -1,0 +1,11 @@
+name: Stompa
+factions: [warhammer-40000/orks]
+releases:
+  - year: 2009
+minis: 1
+draft: true
+variants:
+  - name: Stompa
+    slots:
+      - count: 1
+        buildsAs: [Stompa]

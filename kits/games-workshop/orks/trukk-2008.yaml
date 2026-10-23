@@ -1,0 +1,15 @@
+name: Trukk
+factions: [warhammer-40000/orks]
+releases:
+  - year: 2008
+    sku: "50-09"
+  - year: 2012
+    sku: "50-09"
+minis: 1
+draft: true
+variants:
+  - name: Trukk
+    slots:
+      - count: 1
+        buildsAs: [Trukk]
+        parts: [Big Shoota, Wreckin' Ball, Boarding Plank, Reinforced Ram]

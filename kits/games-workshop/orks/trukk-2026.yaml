@@ -1,0 +1,14 @@
+name: Trukk
+factions: [warhammer-40000/orks]
+releases:
+  - year: 2026
+    sku: "50-78"
+minis: 1
+draft: true
+supersedes: games-workshop/orks/trukk-2008
+variants:
+  - name: Trukk
+    slots:
+      - count: 1
+        buildsAs: [Trukk]
+        parts: [Big Shoota, Rokkit Launcha, Spiked Ram, Dozer Blade, Grabbin' Klaw, Buzzsaw]
