@@ -1,0 +1,17 @@
+name: Nobz
+factions: [warhammer-40000/orks]
+releases:
+  - year: 2009
+  - year: 2018
+    sku: "50-12"
+    barcode: "5011921157006"
+minis: 6
+draft: true
+variants:
+  - name: Nobz
+    slots:
+      - count: 5
+        buildsAs: [Nob]
+        parts: [Slugga, Kustom Choppa, Big Choppa, Power Klaw, Killsaw, Power Stabba, Kustom Shoota, Kombi-rokkit, Kombi-skorcha, Cybork Body]
+      - count: 1
+        buildsAs: [Ammo Runt]
