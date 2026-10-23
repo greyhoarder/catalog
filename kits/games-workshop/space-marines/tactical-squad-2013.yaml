@@ -1,0 +1,22 @@
+name: Tactical Squad
+factions: [warhammer-40000/space-marines]
+releases:
+  - year: 2013
+    sku: "48-07"
+minis: 10
+draft: true
+variants:
+  - name: Tactical Squad
+    slots:
+      - count: 1
+        buildsAs: [Tactical Sergeant, Tactical Marine]
+        parts: [Boltgun, Bolt Pistol, Plasma Pistol, Grav-pistol, Chainsword, Power Sword, Power Fist, Combi-grav, Combi-melta, Combi-plasma, Combi-flamer, Melta Bomb, Auspex, Back Banner]
+      - count: 7
+        buildsAs: [Tactical Marine]
+        parts: [Boltgun]
+      - count: 1
+        buildsAs: [Tactical Marine]
+        parts: [Boltgun, Grav-gun, Meltagun, Plasma Gun, Flamer]
+      - count: 1
+        buildsAs: [Tactical Marine]
+        parts: [Boltgun, Missile Launcher]
