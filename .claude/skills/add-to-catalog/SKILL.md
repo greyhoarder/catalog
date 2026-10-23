@@ -62,6 +62,10 @@ Read `README.md` and `AGENTS.md` first.
      product page, announcement or assembly guide. Retailers often use a
      generic or older name for a model; if only retailers name it, list
      the name as an open point.
+   - Announcements and product texts describe parts loosely; the assembly
+     guide and the box decide. Where an unboxing review or the guide
+     names fewer or other parts than the announcement, list the
+     difference as an open point instead of copying the announcement.
    - For Games Workshop kits, Warhammer 40,000 datasheets are a
      cross-check for names of models and parts. In the 8th edition
      (2017–2020) the datasheets give a rule to nearly every part in the
