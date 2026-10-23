@@ -21,7 +21,6 @@ no rules.
 ```text
 kits/<manufacturer>/<folder>/<kit>.yaml   ← one file per kit
 factions/<system>.yaml                    ← the armies of one game system
-ranges/<manufacturer>/<faction>.yaml      ← working lists: what exists for an army
 ```
 
 - A kit's **id** is its path below `kits/` without the extension, e.g.
@@ -158,37 +157,6 @@ factions:
 - `factions` says what the manufacturer sells a kit for, not what the
   rules of a game allow.
 
-## Ranges
-
-A range file lists what a manufacturer sells or sold for one army, so that
-contributors can see what is still missing. Greyhoarder does not import
-ranges.
-
-```yaml
-# ranges/games-workshop/orks.yaml
-manufacturer: games-workshop
-faction: warhammer-40000/orks
-checked: 2026-10-22
-kits:
-  - name: Boyz
-    kind: kit
-    first: 2026
-    catalog: [games-workshop/orks/boyz-2026]
-    state: drafted
-```
-
-| Field | Required | Meaning |
-|-------|----------|---------|
-| `manufacturer` | yes | Manufacturer folder below `kits/` |
-| `faction` | yes | The army, `<system>/<faction>` |
-| `checked` | yes | Date of the last research, `YYYY-MM-DD` |
-| `kits[].name` | yes | Name of the kit |
-| `kits[].kind` | yes | `kit`, `bundle` or `starter-set` |
-| `kits[].first` | no | First year on sale |
-| `kits[].last` | no | Last year on sale; left out while still on sale |
-| `kits[].catalog` | yes | Ids of the matching kit files; empty until they are planned |
-| `kits[].state` | yes | `open`, `drafted` or `verified` |
-
 ## Checks
 
 CI will check, once it exists:
@@ -197,7 +165,7 @@ CI will check, once it exists:
 - every entry in `factions`, `partOf` and `group` exists in `factions/`;
 - no kit lists an army twice, also not through `partOf`
   (`[space-marines, blood-angels]` is an error);
-- every id in `supersedes`, `contains` and `catalog` exists;
+- every id in `supersedes` and `contains` exists;
 - no released kit file was renamed, moved or deleted.
 
 ## Releases
