@@ -1,9 +1,11 @@
 name: Boyz
 factions: [warhammer-40000/orks]
 releases:
-  - sku: "50-10"
+  - year: 2008
+    sku: "50-10"
     barcode: "5011921096138"
-  - sku: "50-10"
+  - year: 2018
+    sku: "50-10"
     barcode: "5011921156979"
 minis: 11
 draft: true
