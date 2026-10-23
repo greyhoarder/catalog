@@ -14,9 +14,5 @@ contains:
     count: 2
   - kit: games-workshop/orks/boyz-2021
     count: 1
-variants:
-  - name: Stompa Boyz
-    slots:
-      - count: 1
-        buildsAs: [Big Mek]
-        parts: [Kustom Mega-blasta, Traktor Blasta, Power Klaw, Drilla]
+  - kit: games-workshop/orks/big-mek-2024
+    count: 1

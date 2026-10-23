@@ -11,4 +11,4 @@ variants:
     slots:
       - count: 1
         buildsAs: [Trukk]
-        parts: [Big Shoota, Rokkit Launcha, Spiked Ram, Dozer Blade, Grabbin' Klaw, Buzzsaw]
+        parts: [Big Shoota, Rokkit Launcha, Spiked Ram, Grabbin' Klaw, Buzzsaw]
