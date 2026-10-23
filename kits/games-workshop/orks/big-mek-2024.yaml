@@ -1,0 +1,14 @@
+name: Big Mek
+factions: [warhammer-40000/orks]
+releases:
+  - year: 2024
+    sku: "50-68"
+    barcode: "5011921218257"
+minis: 1
+draft: true
+variants:
+  - name: Big Mek
+    slots:
+      - count: 1
+        buildsAs: [Big Mek]
+        parts: [Kustom Mega-blasta, Traktor Blasta, Power Klaw, Drilla]
