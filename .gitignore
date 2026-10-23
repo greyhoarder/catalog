@@ -1,0 +1,5 @@
+# Local working lists for drafting, see AGENTS.md
+/ranges/
+
+# Personal agent settings
+.claude/settings.local.json
