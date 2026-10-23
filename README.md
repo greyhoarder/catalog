@@ -64,6 +64,7 @@ variants:
 | Field | Required | Meaning |
 |-------|----------|---------|
 | `name` | yes | Name of the kit as printed on the box |
+| `aliases` | no | Other names the kit is searched by, e.g. the other outcome of an either-or kit (`Burna Boyz` for `Lootas`) or an earlier box name |
 | `factions` | no | The armies the manufacturer sells the kit for, see [Factions](#factions). The first entry is the army it is mainly sold for. Left out only for kits without a game system (generic minis, bits) |
 | `releases` | yes | One entry per packaging of the same sprues, oldest first, see [Editions](#editions) |
 | `releases[].year` | yes | The year this packaging first went on sale on its own |

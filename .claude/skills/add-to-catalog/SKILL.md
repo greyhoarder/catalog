@@ -58,6 +58,8 @@ Read `README.md` and `AGENTS.md` first.
 2. **Contents:** research the number of minis, either-or outcomes,
    optional leaders, notable parts and the armies the manufacturer sells
    the box for. Describe what is in the box, not what the rules allow.
+   - For either-or kits, put the names of the outcomes that are not in
+     `name` into `aliases`, so the kit is found by each of them.
    - Take the model names for `buildsAs` from the manufacturer's own
      product page, announcement or assembly guide. Retailers often use a
      generic or older name for a model; if only retailers name it, list
