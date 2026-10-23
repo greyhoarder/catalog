@@ -19,8 +19,8 @@ no rules.
 ## Layout
 
 ```text
-kits/<manufacturer>/<folder>/<kit>.yaml   ← one file per kit
-factions/<system>.yaml                    ← the armies of one game system
+kits/<manufacturer>/<folder>/<kit>-<year>.yaml   ← one file per kit
+factions/<system>.yaml                           ← the armies of one game system
 ```
 
 - A kit's **id** is its path below `kits/` without the extension, e.g.
@@ -31,6 +31,8 @@ factions/<system>.yaml                    ← the armies of one game system
   faction, a game); they carry no meaning. Boxes with several armies go
   into `sets/`.
 - Ids and file names are lower case with hyphens.
+- Every file name ends with the year its sprues first went on sale, e.g.
+  `boyz-2026.yaml`; it is the year of the first entry under `releases`.
 
 ## A kit file
 
@@ -63,8 +65,8 @@ variants:
 |-------|----------|---------|
 | `name` | yes | Name of the kit as printed on the box |
 | `factions` | no | The armies the manufacturer sells the kit for, see [Factions](#factions). The first entry is the army it is mainly sold for. Left out only for kits without a game system (generic minis, bits) |
-| `releases` | no | One entry per packaging of the same sprues, see [Editions](#editions) |
-| `releases[].year` | no | The year this packaging first went on sale on its own |
+| `releases` | yes | One entry per packaging of the same sprues, oldest first, see [Editions](#editions) |
+| `releases[].year` | yes | The year this packaging first went on sale on its own |
 | `releases[].sku` | no | The manufacturer's product code, e.g. `"50-80"` (quoted) |
 | `releases[].barcode` | no | EAN/GTIN from the box, digits only (quoted) |
 | `minis` | yes | Total minis the box yields; for either-or kits the count of the first variant |

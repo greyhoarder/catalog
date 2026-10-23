@@ -35,12 +35,50 @@ Read `README.md` and `AGENTS.md` first.
    are the same, treat the editions as different kits and list it as an
    open point. If there are several editions and the user named none, ask
    which to add.
+   - The year of the sprues is the year the kit was announced as new.
+     Start with the kit's Scalemates page and its timeline (`/timeline`
+     after the kit URL): follow "New box" entries back to the "New tool"
+     entry. Scalemates refuses the web fetch tool; read single pages with
+     `curl` and a browser user agent instead. If Scalemates has no year,
+     look for the manufacturer's release announcement, news sites'
+     release articles, or the oldest archived product page on
+     `web.archive.org`. A later year on a retailer page is usually a new
+     packaging of the same sprues: another release, not the file name.
+   - Manufacturers and shops often add the year of a new packaging in
+     brackets to the product name or URL (`<name> (<year>)`,
+     `<name>-<year>`). Search for these forms to date each release.
+   - New bases, box art or a new product code do not make new sprues,
+     even where Scalemates or shops call the box new. Before taking such
+     a year for the file name, check whether the same models were sold
+     earlier, e.g. under an older edition of the game.
+   - Search product codes and barcodes in every form shops use: the short
+     code (`50-xx`), the long code (`99120103xxx`) and combinations such as
+     `GW-99120103xxx-50-xx`. European shops often list barcode and long
+     code together.
 2. **Contents:** research the number of minis, either-or outcomes,
    optional leaders, notable parts and the armies the manufacturer sells
    the box for. Describe what is in the box, not what the rules allow.
+   - Take the model names for `buildsAs` from the manufacturer's own
+     product page, announcement or assembly guide. Retailers often use a
+     generic or older name for a model; if only retailers name it, list
+     the name as an open point.
+   - For Games Workshop kits, Warhammer 40,000 datasheets are a
+     cross-check for names of models and parts. In the 8th edition
+     (2017–2020) the datasheets give a rule to nearly every part in the
+     box of that time, but may also list options no box contains. From
+     the 9th edition on, the options were cut down to what is in the box,
+     and the 10th edition merged many weapons under generic names. For
+     an older kit, use the datasheet of the edition it was on sale in.
+     Nothing from the rules goes into the files.
+   - A datasheet shows which parts a box has, not always what they are
+     best called: a part may have had a generic rules name then and a more
+     fitting one today. Use the manufacturer's current name for the same
+     part; if unsure, list it as an open point instead of correcting the
+     file.
 3. **Bundles and starter sets:** follow the README's "Bundles" section.
    A contained kit that is not in `kits/` yet is added first, the same
-   way. If unsure whether sprues are identical, use own variants and list
+   way. A bundle contains the edition on sale when the bundle came out:
+   if a contained kit has a newer edition today, add the older one. If unsure whether sprues are identical, use own variants and list
    it as an open point. Starter sets with several armies go into
    `kits/<manufacturer>/sets/`.
 4. Write each kit file complete, with `draft: true`.

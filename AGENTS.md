@@ -69,14 +69,30 @@ ask which one before researching.
 
 ## Research
 
-- Prefer the manufacturer's own announcements and product pages; use two
-  or three retailer pages to confirm. Read the pages themselves, not just
+- For the history of a kit (years, product codes, new sprues or only a
+  new box) use [Scalemates](https://www.scalemates.com/) as the main
+  source: each kit page has facts and a timeline, where "New tool" marks
+  new sprues and "New box" a new packaging of existing ones.
+- For contents and names prefer the manufacturer's own announcements and
+  product pages; use two or three retailer pages to confirm. Read the pages themselves, not just
   search snippets; a handful of pages per task, no automated crawling.
 - Every number, product code, barcode and year must appear on a page you
-  read. If sources disagree, use the manufacturer's value and list the
-  disagreement as an open point.
+  read, be told by the user, or already be in an existing file (the year
+  in a file name counts). If sources disagree, use the manufacturer's
+  value and list the disagreement as an open point. When the user marks a
+  fact as unsure ("I think", "allegedly") or pastes it from elsewhere,
+  check it on pages first and report what was confirmed.
+- Not finding a value is no proof that it is wrong. Never call existing
+  data wrong or remove it only because your search found nothing; list it
+  as an open point.
+- A retailer's "publish year" or "edition" year usually marks a new
+  packaging, not new sprues. Use it for a file name only if a page says
+  the kit was new that year.
 - Never guess. A fact no source states is left out and listed as an open
   point.
+- The year is the exception: every kit needs one in its file name and in
+  each release. A kit or release whose year no page states is not written;
+  list it as an open point instead.
 - Facts only, in your own words. Never copy sentences from shops,
   manufacturer pages or packaging. No images, no prices, no rules (points,
   datasheets, unit sizes, wargear restrictions).
@@ -92,7 +108,16 @@ ask which one before researching.
   or none).
 - Don't commit unless asked; then use the `commit` skill. Never push or
   open pull requests.
-- Don't change `README.md`, this file or the skills without asking first.
+- Don't change `README.md`, this file or the skills without asking first,
+  except as described under "Corrections".
+
+## Corrections
+
+When the user corrects something or supplies a fact you missed, find out
+why you missed it and adjust this file or the skills so it does not happen
+again: better sources, search terms or rules. Write general advice only,
+never data of concrete kits (names, codes, years). Name the change in the
+reply.
 
 ## Commits
 
