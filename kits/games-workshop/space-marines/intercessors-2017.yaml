@@ -1,5 +1,8 @@
 name: Intercessors
 factions: [warhammer-40000/space-marines]
+releases:
+  - year: 2017
+minis: 10
 variants:
   - name: Intercessors
     slots:
