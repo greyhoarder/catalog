@@ -39,7 +39,12 @@ Read `README.md` and `AGENTS.md` first.
      Start with the kit's Scalemates page and its timeline (`/timeline`
      after the kit URL): follow "New box" entries back to the "New tool"
      entry. Scalemates refuses the web fetch tool; read single pages with
-     `curl` and a browser user agent instead. If Scalemates has no year,
+     `curl` and a browser user agent instead. For Warhammer kits, also
+     check Lexicanum's "Miniatures: <army>" page (linked from
+     `https://wh40k.lexicanum.com/wiki/Portal:Miniatures`): it lists new
+     models by edition and year, but not new packagings. It may answer
+     with a bot check; never work around it, ask the user to look
+     instead. If Scalemates and Lexicanum have no year,
      look for the manufacturer's release announcement, news sites'
      release articles, or the oldest archived product page on
      `web.archive.org`. A later year on a retailer page is usually a new
@@ -47,6 +52,8 @@ Read `README.md` and `AGENTS.md` first.
    - Manufacturers and shops often add the year of a new packaging in
      brackets to the product name or URL (`<name> (<year>)`,
      `<name>-<year>`). Search for these forms to date each release.
+   - Patterns are no proof of a year: kits of the same army need not share
+     a year, and neighbouring barcodes or product codes only hint at it.
    - New bases, box art or a new product code do not make new sprues,
      even where Scalemates or shops call the box new. Before taking such
      a year for the file name, check whether the same models were sold
@@ -64,6 +71,19 @@ Read `README.md` and `AGENTS.md` first.
      product page, announcement or assembly guide. Retailers often use a
      generic or older name for a model; if only retailers name it, list
      the name as an open point.
+   - Slots suggest a typical build, they do not list every possible one:
+     give parts the box has only once or twice (a special or heavy
+     weapon, a leader's weapons) a slot of their own with a matching
+     count, never one slot shared by the whole box. If the box has a
+     basic part for every mini (a boltgun each), list it in every slot.
+     In monopose kits a body comes with its weapon, so each such body
+     group is a slot of its own.
+   - `buildsAs` lists models the box can build, not roles from the rules:
+     a leader that the rules know but the box gives no own parts for
+     (head, body or weapon) is left out.
+   - Retailer texts sometimes mix in parts or models of other kits. A
+     part or model that only one retailer names while the others do not
+     is an open point, not part of the file.
    - Announcements and product texts describe parts loosely; the assembly
      guide and the box decide. Where an unboxing review or the guide
      names fewer or other parts than the announcement, list the
@@ -76,11 +96,19 @@ Read `README.md` and `AGENTS.md` first.
      and the 10th edition merged many weapons under generic names. For
      an older kit, use the datasheet of the edition it was on sale in.
      Nothing from the rules goes into the files.
+   - Retailer texts list only a selection of the parts; a part they do not
+     name may still be in the box. For a kit on sale during the 8th
+     edition, add the parts its datasheet lists for the models of the box
+     and name them as an open point, unless a source says the box lacks
+     them.
    - A datasheet shows which parts a box has, not always what they are
      best called: a part may have had a generic rules name then and a more
      fitting one today. Use the manufacturer's current name for the same
      part; if unsure, list it as an open point instead of correcting the
      file.
+   - Name the same part the same way in every kit file: before writing
+     `parts`, look at the kit files of the same army and reuse their
+     names.
 3. **Bundles and starter sets:** follow the README's "Bundles" section.
    A contained kit that is not in `kits/` yet is added first, the same
    way. A bundle contains the edition on sale when the bundle came out:
