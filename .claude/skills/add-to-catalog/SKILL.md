@@ -64,6 +64,14 @@ Read `README.md` and `AGENTS.md` first.
      code (`50-xx`), the long code (`99120103xxx`) and combinations such as
      `GW-99120103xxx-50-xx`. European shops often list barcode and long
      code together.
+   - Barcodes: for a box on sale today, read the product data of two
+     Shopify shops (`<shop>/products/<handle>.js`, fields `barcode` and
+     `sku`); they must agree, or one shop must agree with Scalemates. For
+     an old box, take a barcode only from the box itself, Scalemates or a
+     shop page that names it as the old barcode; otherwise it is an open
+     point. Check the EAN-13 check digit before writing it. Verified by
+     GS1 may confirm that a barcode belongs to the manufacturer, but its
+     results must not be copied into the catalog.
 2. **Contents:** research the number of minis, either-or outcomes,
    optional leaders, notable parts and the armies the manufacturer sells
    the box for. Describe what is in the box, not what the rules allow.
