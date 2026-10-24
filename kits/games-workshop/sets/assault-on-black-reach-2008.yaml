@@ -1,0 +1,61 @@
+name: Assault on Black Reach
+factions: [warhammer-40000/space-marines, warhammer-40000/orks]
+releases:
+  - year: 2008
+minis: 46
+draft: true
+variants:
+  - name: Assault on Black Reach
+    slots:
+      - count: 1
+        buildsAs: [Captain]
+        parts: [Power Sword, Master-crafted Boltgun, Back Banner]
+        factions: [warhammer-40000/space-marines]
+      - count: 1
+        buildsAs: [Tactical Sergeant]
+        parts: [Chainsword]
+        factions: [warhammer-40000/space-marines]
+      - count: 7
+        buildsAs: [Tactical Marine]
+        parts: [Boltgun]
+        factions: [warhammer-40000/space-marines]
+      - count: 1
+        buildsAs: [Tactical Marine]
+        parts: [Flamer]
+        factions: [warhammer-40000/space-marines]
+      - count: 1
+        buildsAs: [Tactical Marine]
+        parts: [Missile Launcher]
+        factions: [warhammer-40000/space-marines]
+      - count: 4
+        buildsAs: [Terminator]
+        parts: [Storm Bolter, Power Fist]
+        factions: [warhammer-40000/space-marines]
+      - count: 1
+        buildsAs: [Terminator Sergeant]
+        parts: [Storm Bolter, Power Sword]
+        factions: [warhammer-40000/space-marines]
+      - count: 1
+        buildsAs: [Dreadnought]
+        parts: [Multi-melta, Dreadnought Combat Weapon]
+        factions: [warhammer-40000/space-marines]
+      - count: 1
+        buildsAs: [Warboss]
+        parts: [Power Klaw, Kustom Shoota]
+        factions: [warhammer-40000/orks]
+      - count: 5
+        buildsAs: [Nob]
+        parts: [Slugga, Choppa]
+        factions: [warhammer-40000/orks]
+      - count: 18
+        buildsAs: [Boy]
+        parts: [Slugga, Choppa]
+        factions: [warhammer-40000/orks]
+      - count: 2
+        buildsAs: [Boy]
+        parts: [Big Shoota]
+        factions: [warhammer-40000/orks]
+      - count: 3
+        buildsAs: [Deffkopta]
+        parts: [Kopta Rokkits]
+        factions: [warhammer-40000/orks]
