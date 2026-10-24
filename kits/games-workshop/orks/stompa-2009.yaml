@@ -2,6 +2,7 @@ name: Stompa
 factions: [warhammer-40000/orks]
 releases:
   - year: 2009
+    barcode: "5011921013388"
 minis: 1
 draft: true
 variants:

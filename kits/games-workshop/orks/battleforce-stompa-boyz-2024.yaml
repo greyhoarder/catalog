@@ -3,6 +3,7 @@ factions: [warhammer-40000/orks]
 releases:
   - year: 2024
     sku: "50-67"
+    barcode: "5011921222032"
 minis: 23
 draft: true
 contains:
