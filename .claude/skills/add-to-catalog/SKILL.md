@@ -42,9 +42,10 @@ Read `README.md` and `AGENTS.md` first.
      `curl` and a browser user agent instead. For Warhammer kits, also
      check Lexicanum's "Miniatures: <army>" page (linked from
      `https://wh40k.lexicanum.com/wiki/Portal:Miniatures`): it lists new
-     models by edition and year, but not new packagings. It may answer
-     with a bot check; never work around it, ask the user to look
-     instead. If Scalemates and Lexicanum have no year,
+     models by edition and year, but not new packagings. Year headings
+     can carry a suffix ("2014 - Codex: ..."), so match them loosely. It
+     may answer with a bot check; never work around it, but try again
+     later in the task before asking the user to look. If Scalemates and Lexicanum have no year,
      look for the manufacturer's release announcement, news sites'
      release articles, or the oldest archived product page on
      `web.archive.org`. A later year on a retailer page is usually a new
