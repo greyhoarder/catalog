@@ -1,0 +1,21 @@
+name: Wolf Guard Terminators
+factions: [warhammer-40000/space-wolves]
+releases:
+  - year: 2025
+    sku: "53-36"
+    barcode: "5011921247882"
+minis: 5
+draft: true
+supersedes: games-workshop/space-wolves/wolf-guard-terminators-2009
+variants:
+  - name: Wolf Guard Terminators
+    slots:
+      - count: 1
+        buildsAs: [Wolf Guard Terminator Pack Leader, Wolf Guard Terminator]
+        parts: [Relic Greataxe, Twin Lightning Claws, Master-crafted Power Weapon, Storm Bolter, Storm Shield]
+      - count: 3
+        buildsAs: [Wolf Guard Terminator]
+        parts: [Master-crafted Power Weapon, Storm Bolter, Storm Shield]
+      - count: 1
+        buildsAs: [Wolf Guard Terminator]
+        parts: [Master-crafted Power Weapon, Storm Bolter, Storm Shield, Assault Cannon, Power Fist]

@@ -10,3 +10,6 @@ factions:
   space-marines:
     name: Space Marines
     group: imperium
+  space-wolves:
+    name: Space Wolves
+    partOf: space-marines

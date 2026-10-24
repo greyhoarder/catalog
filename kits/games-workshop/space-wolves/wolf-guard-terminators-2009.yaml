@@ -1,0 +1,16 @@
+name: Wolf Guard Terminators
+factions: [warhammer-40000/space-wolves]
+releases:
+  - year: 2009
+    sku: "53-07"
+minis: 5
+draft: true
+variants:
+  - name: Wolf Guard Terminators
+    slots:
+      - count: 4
+        buildsAs: [Wolf Guard Terminator]
+        parts: [Storm Bolter, Power Fist, Chainfist, Wolf Claw, Thunder Hammer, Storm Shield, Frost Axe, Power Sword]
+      - count: 1
+        buildsAs: [Wolf Guard Terminator]
+        parts: [Storm Bolter, Assault Cannon, Heavy Flamer, Power Fist]
