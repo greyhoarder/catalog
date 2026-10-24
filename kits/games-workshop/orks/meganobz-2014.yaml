@@ -1,7 +1,10 @@
 name: Meganobz
+aliases: [Big Mek in Mega Armour]
 factions: [warhammer-40000/orks]
 releases:
   - year: 2014
+    sku: "50-08"
+    barcode: "5011921156955"
 minis: 4
 draft: true
 variants:

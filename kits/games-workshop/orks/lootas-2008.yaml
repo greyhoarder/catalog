@@ -3,6 +3,7 @@ aliases: [Burna Boyz]
 factions: [warhammer-40000/orks]
 releases:
   - year: 2008
+    sku: "50-22"
   - year: 2018
     sku: "50-22"
     barcode: "5011921156993"
