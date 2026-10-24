@@ -3,6 +3,7 @@ factions: [warhammer-40000/orks]
 releases:
   - year: 2026
     sku: "50-78"
+    barcode: "5011921267095"
 minis: 1
 draft: true
 supersedes: games-workshop/orks/trukk-2008
