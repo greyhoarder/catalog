@@ -1,0 +1,17 @@
+name: Meganobz
+factions: [warhammer-40000/orks]
+releases:
+  - year: 2014
+minis: 4
+draft: true
+variants:
+  - name: Meganobz
+    slots:
+      - count: 1
+        buildsAs: [Meganob, Big Mek in Mega Armour]
+        parts: [Power Klaw, Kustom Shoota, Kombi-rokkit, Kombi-skorcha, Killsaw, Kustom Mega-blasta, Kustom Force Field, Tellyport Blasta]
+      - count: 2
+        buildsAs: [Meganob]
+        parts: [Power Klaw, Kustom Shoota, Kombi-rokkit, Kombi-skorcha, Killsaw]
+      - count: 1
+        buildsAs: [Grot Oiler]
