@@ -45,8 +45,9 @@ Read `README.md` and `AGENTS.md` first.
      models by edition and year, but not new packagings. Year headings
      can carry a suffix ("2014 - Codex: ..."), so match them loosely. It
      may answer with a bot check; never work around it, but try again
-     later in the task before asking the user to look. If Scalemates and Lexicanum have no year,
-     look for the manufacturer's release announcement, news sites'
+     later in the task before asking the user to look. If Scalemates and
+     Lexicanum have no year, look for the manufacturer's release
+     announcement, news sites'
      release articles, or the oldest archived product page on
      `web.archive.org`. A later year on a retailer page is usually a new
      packaging of the same sprues: another release, not the file name.
@@ -84,8 +85,9 @@ Read `README.md` and `AGENTS.md` first.
      (head, body or weapon) is left out.
    - Equipment tables on shop and review pages often copy the default
      wargear of the rules ("boltgun", "power weapon"), not what the
-     sculpt holds; a character may carry a special variant. Prefer
-     photos, unboxing reviews and the assembly guide for such parts.
+     sculpt holds; a character may carry a special variant. For
+     characters and monopose or push-fit minis, prefer photos, unboxing
+     reviews and the assembly guide.
    - Retailer texts sometimes mix in parts or models of other kits. A
      part or model that only one retailer names while the others do not
      is an open point, not part of the file.
@@ -102,10 +104,11 @@ Read `README.md` and `AGENTS.md` first.
      an older kit, use the datasheet of the edition it was on sale in.
      Nothing from the rules goes into the files.
    - Retailer texts list only a selection of the parts; a part they do not
-     name may still be in the box. For a kit on sale during the 8th
-     edition, add the parts its datasheet lists for the models of the box
-     and name them as an open point, unless a source says the box lacks
-     them.
+     name may still be in the box. For a multipart kit on sale during the
+     8th edition, add the parts its datasheet lists for the models of the
+     box and name them as an open point, unless a source says the box
+     lacks them. This does not apply to characters and monopose or
+     push-fit minis (see above).
    - A datasheet shows which parts a box has, not always what they are
      best called: a part may have had a generic rules name then and a more
      fitting one today. Use the manufacturer's current name for the same
@@ -117,9 +120,14 @@ Read `README.md` and `AGENTS.md` first.
 3. **Bundles and starter sets:** follow the README's "Bundles" section.
    A contained kit that is not in `kits/` yet is added first, the same
    way. A bundle contains the edition on sale when the bundle came out:
-   if a contained kit has a newer edition today, add the older one. If unsure whether sprues are identical, use own variants and list
-   it as an open point. Starter sets with several armies go into
-   `kits/<manufacturer>/sets/`.
+   if a contained kit has a newer edition today, add the older one.
+   - Use `contains` when the manufacturer names the same models that it
+     sells on their own (army sets, battleforces, combat patrols are
+     usually such repacks); list it as an open point until checked.
+   - Use own variants for minis made only for the box, such as the
+     push-fit or monopose minis of starter sets, and when there is real
+     doubt that the sprues match.
+   - Starter sets with several armies go into `kits/<manufacturer>/sets/`.
 4. Write each kit file complete, with `draft: true`.
 5. If a range file for the army exists, update its entries (`catalog`,
    `state: drafted`).
