@@ -60,23 +60,34 @@ Read `README.md` and `AGENTS.md` first.
      even where Scalemates or shops call the box new. Before taking such
      a year for the file name, check whether the same models were sold
      earlier, e.g. under an older edition of the game.
+   - A short code usually stays the same across new packagings of the
+     same sprues; when the sources show only one code for a kit, enter it
+     even if a barcode or a later release cannot be placed yet.
    - Search product codes and barcodes in every form shops use: the short
      code (`50-xx`), the long code (`99120103xxx`) and combinations such as
      `GW-99120103xxx-50-xx`. European shops often list barcode and long
      code together.
-   - Barcodes: for a box on sale today, read the product data of two
-     Shopify shops (`<shop>/products/<handle>.js`, fields `barcode` and
-     `sku`); they must agree, or one shop must agree with Scalemates. For
+   - Barcodes: for a box on sale today, read the structured product data
+     of two shops: Shopify's `<shop>/products/<handle>.js` (fields
+     `barcode` and `sku`), or `gtin13`/`sku` in a page's JSON-LD or
+     `itemprop` attributes, which many other shop systems show. They
+     must agree, or one shop must agree with Scalemates. For
      an old box, take a barcode only from the box itself, Scalemates or a
      shop page that names it as the old barcode; otherwise it is an open
-     point. Check the EAN-13 check digit before writing it. Verified by
+     point. If no source shows a new packaging of the kit, enter today's
+     barcode on its release and list the box's year as an open point.
+     Shops' photos of the box back show barcode, short and long
+     code, and a side photo the copyright year: download the image into
+     its own folder, crop and enlarge the label, and read it. Check the EAN-13 check digit before writing it. Verified by
      GS1 may confirm that a barcode belongs to the manufacturer, but its
      results must not be copied into the catalog.
 2. **Contents:** research the number of minis, either-or outcomes,
    optional leaders, notable parts and the armies the manufacturer sells
    the box for. Describe what is in the box, not what the rules allow.
    - For either-or kits, put the names of the outcomes that are not in
-     `name` into `aliases`, so the kit is found by each of them.
+     `name` into `aliases`, so the kit is found by each of them. The same
+     goes for a box that the manufacturer or shops also sell under the
+     name of a model it builds (a character among a squad).
    - Take the model names for `buildsAs` from the manufacturer's own
      product page, announcement or assembly guide. Retailers often use a
      generic or older name for a model; if only retailers name it, list
