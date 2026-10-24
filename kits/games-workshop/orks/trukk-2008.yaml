@@ -12,4 +12,4 @@ variants:
     slots:
       - count: 1
         buildsAs: [Trukk]
-        parts: [Big Shoota, Wreckin' Ball, Boarding Plank, Reinforced Ram]
+        parts: [Big Shoota, Rokkit Launcha, Grabbin' Klaw, Wreckin' Ball, Boarding Plank, Reinforced Ram]
