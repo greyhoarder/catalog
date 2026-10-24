@@ -82,6 +82,10 @@ Read `README.md` and `AGENTS.md` first.
    - `buildsAs` lists models the box can build, not roles from the rules:
      a leader that the rules know but the box gives no own parts for
      (head, body or weapon) is left out.
+   - Equipment tables on shop and review pages often copy the default
+     wargear of the rules ("boltgun", "power weapon"), not what the
+     sculpt holds; a character may carry a special variant. Prefer
+     photos, unboxing reviews and the assembly guide for such parts.
    - Retailer texts sometimes mix in parts or models of other kits. A
      part or model that only one retailer names while the others do not
      is an open point, not part of the file.
