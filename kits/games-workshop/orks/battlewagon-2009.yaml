@@ -1,0 +1,13 @@
+name: Battlewagon
+factions: [warhammer-40000/orks]
+releases:
+  - year: 2009
+    sku: "50-20"
+minis: 1
+draft: true
+variants:
+  - name: Battlewagon
+    slots:
+      - count: 1
+        buildsAs: [Battlewagon]
+        parts: [Kannon, Zzap Gun, Lobba, Big Shoota, Rokkit Launcha, Grabbin' Klaw, Wreckin' Ball, Reinforced Ram, Grot Rigger, Stikkbomb Chukka]

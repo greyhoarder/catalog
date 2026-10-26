@@ -1,0 +1,16 @@
+name: Battlewagon
+aliases: [Gunwagon, Bonebreaka]
+factions: [warhammer-40000/orks]
+releases:
+  - year: 2021
+    sku: "50-20"
+    barcode: "5011921156887"
+minis: 1
+draft: true
+supersedes: games-workshop/orks/battlewagon-2009
+variants:
+  - name: Battlewagon
+    slots:
+      - count: 1
+        buildsAs: [Battlewagon, Gunwagon, Bonebreaka]
+        parts: [Kannon, Killkannon, Zzap Gun, Lobba, Big Shoota, Rokkit Launcha, Deff Rolla, Grabbin' Klaw, Wreckin' Ball, Reinforced Ram, Grot Rigger, Stikkbomb Chukka]
