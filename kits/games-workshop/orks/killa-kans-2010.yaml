@@ -1,0 +1,20 @@
+name: Killa Kans
+factions: [warhammer-40000/orks]
+releases:
+  - year: 2010
+    sku: "50-17"
+    barcode: "5011921156894"
+minis: 3
+draft: true
+variants:
+  - name: Killa Kans
+    slots:
+      - count: 1
+        buildsAs: [Killa Kan]
+        parts: [Big Shoota, Kan Klaw, Buzz Saw, Drilla]
+      - count: 1
+        buildsAs: [Killa Kan]
+        parts: [Rokkit Launcha, Kan Klaw, Buzz Saw, Drilla]
+      - count: 1
+        buildsAs: [Killa Kan]
+        parts: [Skorcha, Kan Klaw, Buzz Saw, Drilla]

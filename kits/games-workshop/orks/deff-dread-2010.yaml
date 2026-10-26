@@ -1,0 +1,14 @@
+name: Deff Dread
+factions: [warhammer-40000/orks]
+releases:
+  - year: 2010
+    sku: "50-14"
+    barcode: "5011921018352"
+minis: 1
+draft: true
+variants:
+  - name: Deff Dread
+    slots:
+      - count: 1
+        buildsAs: [Deff Dread]
+        parts: [Dread Klaw, Dread Saw, Big Shoota, Rokkit Launcha, Kustom Mega-blasta, Skorcha]
