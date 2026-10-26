@@ -23,7 +23,7 @@ see which kits are still missing. It is only a tool for drafting:
 does not read them.
 
 ```yaml
-# ranges/games-workshop/orks.yaml
+# ranges/games-workshop/warhammer-40000/orks.yaml
 manufacturer: games-workshop
 faction: warhammer-40000/orks
 checked: 2026-10-22
@@ -31,7 +31,7 @@ kits:
   - name: Boyz
     kind: kit
     first: 2026
-    catalog: [games-workshop/orks/boyz-2026]
+    catalog: [games-workshop/warhammer-40000/orks/boyz-2026]
     state: drafted
 ```
 
@@ -123,7 +123,7 @@ reply.
 
 - One line, no body: `<area>: <verb> <what>`
 - Area:
-  - the folder below the manufacturer for kits (`orks`, `sets`);
+  - the folder below the system for kits (`orks`, `sets`);
   - `factions` when only faction files change;
   - `docs` for `README.md`, `AGENTS.md` and skills;
   - `repo` for repo setup (`.gitignore`, CI, templates).

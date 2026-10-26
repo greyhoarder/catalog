@@ -19,17 +19,19 @@ no rules.
 ## Layout
 
 ```text
-kits/<manufacturer>/<folder>/<kit>-<year>.yaml   ← one file per kit
-factions/<system>.yaml                           ← the armies of one game system
+kits/<manufacturer>/<system>/<folder>/<kit>-<year>.yaml   ← one file per kit
+factions/<system>.yaml                                    ← the armies of one game system
 ```
 
 - A kit's **id** is its path below `kits/` without the extension, e.g.
-  `games-workshop/orks/boyz-2026`. Instances store these ids, so a released
-  kit file is never renamed, moved or deleted.
+  `games-workshop/warhammer-40000/orks/boyz-2026`. Instances store these
+  ids, so a released kit file is never renamed, moved or deleted.
 - The **manufacturer** is the first folder, e.g. `games-workshop`.
-- The folders below the manufacturer only keep things tidy (a range, a
-  faction, a game); they carry no meaning. Boxes with several armies go
-  into `sets/`.
+- The second folder is the **system** of the kit's first entry in
+  `factions`, named like its file in `factions/`, e.g. `warhammer-40000`
+  or `kill-team`.
+- The folders below the system only keep things tidy (an army, a range);
+  they carry no meaning. Boxes with several armies go into `sets/`.
 - Ids and file names are lower case with hyphens.
 - Every file name ends with the year its sprues first went on sale, e.g.
   `boyz-2026.yaml`; it is the year of the first entry under `releases`.
@@ -37,8 +39,8 @@ factions/<system>.yaml                           ← the armies of one game syst
 ## A kit file
 
 ```yaml
-# kits/games-workshop/orks/boyz-2026.yaml
-# id: games-workshop/orks/boyz-2026
+# kits/games-workshop/warhammer-40000/orks/boyz-2026.yaml
+# id: games-workshop/warhammer-40000/orks/boyz-2026
 name: Boyz
 factions: [warhammer-40000/orks]
 releases:
@@ -47,7 +49,7 @@ releases:
     barcode: "5011921267064"
 minis: 11
 draft: true
-supersedes: games-workshop/orks/boyz-2021
+supersedes: games-workshop/warhammer-40000/orks/boyz-2021
 variants:
   - name: Boyz
     slots:

@@ -27,7 +27,7 @@ overview. Never commit without that confirmation, and never push.
    ### Commit 1: `orks: add Beast Snagga Boyz`
    | Status | File | Lines |
    |--------|------|-------|
-   | A      | kits/games-workshop/orks/beast-snagga-boyz.yaml | +24 |
+   | A      | kits/games-workshop/warhammer-40000/orks/beast-snagga-boyz.yaml | +24 |
    | M      | factions/warhammer-40000.yaml                   | +3 −0 |
 
    ### Commit 2: ...

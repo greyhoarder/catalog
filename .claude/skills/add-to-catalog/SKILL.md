@@ -21,7 +21,7 @@ Read `README.md` and `AGENTS.md` first.
    single kits, bundles (army sets, combat patrols, battleforces) and
    starter sets, including kits the manufacturer also sells for other
    armies. For an army with `partOf`, list only its own kits.
-2. Write or update `ranges/<manufacturer>/<faction>.yaml` (format in
+2. Write or update `ranges/<manufacturer>/<system>/<faction>.yaml` (format in
    `AGENTS.md`) and add the army to `factions/` if it is missing.
 3. Show the list as a table (kit, kind, years, already in the catalog) and
    ask which kits to add. Wait for the answer.
@@ -150,7 +150,8 @@ Read `README.md` and `AGENTS.md` first.
    - Use own variants for minis made only for the box, such as the
      push-fit or monopose minis of starter sets, and when there is real
      doubt that the sprues match.
-   - Starter sets with several armies go into `kits/<manufacturer>/sets/`.
+   - Starter sets with several armies go into
+     `kits/<manufacturer>/<system>/sets/`.
 4. Write each kit file complete, with `draft: true`.
 5. If a range file for the army exists, update its entries (`catalog`,
    `state: drafted`).
