@@ -128,6 +128,10 @@ Read `README.md` and `AGENTS.md` first.
      box and name them as an open point, unless a source says the box
      lacks them. This does not apply to characters and monopose or
      push-fit minis (see above).
+   - `parts` lists only things that are built onto a mini. Datasheet
+     upgrades that are only a rule, with no part of their own in the
+     box (extra armour, a vehicle upgrade), are left out; if unsure
+     whether a part exists, list it as an open point.
    - A datasheet shows which parts a box has, not always what they are
      best called: a part may have had a generic rules name then and a more
      fitting one today. Use the manufacturer's current name for the same
