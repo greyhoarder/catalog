@@ -7,8 +7,17 @@ draft: true
 variants:
   - name: Tankbustas
     slots:
-      - count: 5
+      - count: 1
+        buildsAs: [Boss Nob]
+        parts: [Rokkit Launcha]
+      - count: 2
         buildsAs: [Tankbusta]
         parts: [Rokkit Launcha]
+      - count: 1
+        buildsAs: [Tankbusta]
+        parts: [Rokkit Pistol]
+      - count: 1
+        buildsAs: [Tankbusta]
+        parts: [Tankhammer]
       - count: 2
         buildsAs: [Bomb Squig]
