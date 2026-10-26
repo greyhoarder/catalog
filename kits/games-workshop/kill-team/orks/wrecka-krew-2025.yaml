@@ -14,19 +14,19 @@ variants:
         buildsAs: [Boss Nob]
         parts: [Rokkit Pistol, Smash Hammer]
       - count: 1
-        buildsAs: [Tankbusta Gunner, Tankbusta Rokkiteer, Breaka Boy Fighter]
-        parts: [Rokkit Launcha, Pulsa Rokkit, Rokkit Rack, Smash Hammer]
+        buildsAs: [Tankbusta, Breaka Boy]
+        parts: [Rokkit Launcha, Smash Hammer]
       - count: 1
-        buildsAs: [Tankbusta Gunner, Breaka Boy Fighter, Breaka Boy Krusha]
+        buildsAs: [Tankbusta, Breaka Boy]
         parts: ["'Eavy Rokkit Launcha", Smash Hammer, Knucklebustas]
       - count: 1
-        buildsAs: [Tankbusta Gunner, Breaka Boy Fighter, Breaka Boy Demolisha]
+        buildsAs: [Tankbusta, Breaka Boy]
         parts: [Rokkit Launcha, Smash Hammer, Tankhammer]
       - count: 1
-        buildsAs: [Tankbusta Gunner, Breaka Boy Fighter]
+        buildsAs: [Tankbusta, Breaka Boy]
         parts: ["'Eavy Rokkit Launcha", Smash Hammer]
       - count: 1
-        buildsAs: [Tankbusta Gunner, Breaka Boy Fighter]
+        buildsAs: [Tankbusta, Breaka Boy]
         parts: [Rokkit Launcha, Smash Hammer]
       - count: 2
         buildsAs: [Bomb Squig]
