@@ -1,0 +1,19 @@
+name: "Battleforce: Stompa Boyz"
+factions: [warhammer-40000/orks]
+releases:
+  - year: 2024
+    sku: "50-67"
+    barcode: "5011921222032"
+minis: 23
+draft: true
+contains:
+  - kit: games-workshop/warhammer-40000/orks/stompa-2009
+    count: 1
+  - kit: games-workshop/warhammer-40000/orks/trukk-2008
+    count: 1
+  - kit: games-workshop/warhammer-40000/orks/lootas-2008
+    count: 2
+  - kit: games-workshop/warhammer-40000/orks/boyz-2021
+    count: 1
+  - kit: games-workshop/warhammer-40000/orks/big-mek-2024
+    count: 1

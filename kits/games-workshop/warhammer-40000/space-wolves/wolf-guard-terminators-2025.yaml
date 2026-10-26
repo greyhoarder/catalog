@@ -6,7 +6,7 @@ releases:
     barcode: "5011921247882"
 minis: 5
 draft: true
-supersedes: games-workshop/space-wolves/wolf-guard-terminators-2009
+supersedes: games-workshop/warhammer-40000/space-wolves/wolf-guard-terminators-2009
 variants:
   - name: Wolf Guard Terminators
     slots:

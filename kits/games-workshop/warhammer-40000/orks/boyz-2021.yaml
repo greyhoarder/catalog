@@ -6,7 +6,7 @@ releases:
     barcode: "5011921163441"
 minis: 10
 draft: true
-supersedes: games-workshop/orks/boyz-2008
+supersedes: games-workshop/warhammer-40000/orks/boyz-2008
 variants:
   - name: Boyz
     slots:

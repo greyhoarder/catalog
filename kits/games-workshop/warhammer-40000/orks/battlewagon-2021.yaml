@@ -7,7 +7,7 @@ releases:
     barcode: "5011921156887"
 minis: 1
 draft: true
-supersedes: games-workshop/orks/battlewagon-2009
+supersedes: games-workshop/warhammer-40000/orks/battlewagon-2009
 variants:
   - name: Battlewagon
     slots:

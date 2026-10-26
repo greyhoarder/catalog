@@ -6,7 +6,7 @@ releases:
     barcode: "5011921267064"
 minis: 11
 draft: true
-supersedes: games-workshop/orks/boyz-2021
+supersedes: games-workshop/warhammer-40000/orks/boyz-2021
 variants:
   - name: Boyz
     slots:
