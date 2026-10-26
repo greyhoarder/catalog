@@ -102,6 +102,10 @@ Read `README.md` and `AGENTS.md` first.
    - `buildsAs` lists models the box can build, not roles from the rules:
      a leader that the rules know but the box gives no own parts for
      (head, body or weapon) is left out.
+   - Go by the sprue: one slot per body or group of equal bodies, with
+     the parts that fit it. Specialist roles of one game (Kill Team
+     operatives such as a gunner or a krusha) are not models; name the
+     model in `buildsAs` and put what sets the role apart into `parts`.
    - Equipment tables on shop and review pages often copy the default
      wargear of the rules ("boltgun", "power weapon"), not what the
      sculpt holds; a character may carry a special variant. For
