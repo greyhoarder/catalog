@@ -1,0 +1,32 @@
+name: Wrecka Krew
+aliases: [Tankbustas, Breaka Boyz]
+factions: [kill-team/orks, warhammer-40000/orks]
+releases:
+  - year: 2025
+    sku: "103-87"
+    barcode: "5011921225712"
+minis: 8
+draft: true
+variants:
+  - name: Wrecka Krew
+    slots:
+      - count: 1
+        buildsAs: [Boss Nob]
+        parts: [Rokkit Pistol, Smash Hammer]
+      - count: 1
+        buildsAs: [Tankbusta Gunner, Tankbusta Rokkiteer, Breaka Boy Fighter]
+        parts: [Rokkit Launcha, Pulsa Rokkit, Rokkit Rack, Smash Hammer]
+      - count: 1
+        buildsAs: [Tankbusta Gunner, Breaka Boy Fighter, Breaka Boy Krusha]
+        parts: ["'Eavy Rokkit Launcha", Smash Hammer, Knucklebustas]
+      - count: 1
+        buildsAs: [Tankbusta Gunner, Breaka Boy Fighter, Breaka Boy Demolisha]
+        parts: [Rokkit Launcha, Smash Hammer, Tankhammer]
+      - count: 1
+        buildsAs: [Tankbusta Gunner, Breaka Boy Fighter]
+        parts: ["'Eavy Rokkit Launcha", Smash Hammer]
+      - count: 1
+        buildsAs: [Tankbusta Gunner, Breaka Boy Fighter]
+        parts: [Rokkit Launcha, Smash Hammer]
+      - count: 2
+        buildsAs: [Bomb Squig]

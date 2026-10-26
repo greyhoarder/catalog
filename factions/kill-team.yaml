@@ -1,0 +1,9 @@
+name: Kill Team
+groups:
+  imperium: Imperium
+  chaos: Chaos
+  xenos: Xenos
+factions:
+  orks:
+    name: Orks
+    group: xenos

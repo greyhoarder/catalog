@@ -1,0 +1,14 @@
+name: Tankbustas
+factions: [warhammer-40000/orks]
+releases:
+  - year: 2008
+minis: 7
+draft: true
+variants:
+  - name: Tankbustas
+    slots:
+      - count: 5
+        buildsAs: [Tankbusta]
+        parts: [Rokkit Launcha]
+      - count: 2
+        buildsAs: [Bomb Squig]
