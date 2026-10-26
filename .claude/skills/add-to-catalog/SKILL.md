@@ -111,6 +111,10 @@ Read `README.md` and `AGENTS.md` first.
      sculpt holds; a character may carry a special variant. For
      characters and monopose or push-fit minis, prefer photos, unboxing
      reviews and the assembly guide.
+   - Shop texts often count a unit's leader among its members ("5
+     Tankbustas" with a Nob among them). For monopose, metal and resin
+     kits, download the box art from a shop (Shopify's `.js` lists the
+     images), enlarge it and name each mini by its body and weapon.
    - Retailer texts sometimes mix in parts or models of other kits. A
      part or model that only one retailer names while the others do not
      is an open point, not part of the file.
